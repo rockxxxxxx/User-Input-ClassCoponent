@@ -6,7 +6,7 @@ export default class ImageCard extends Component {
     this.ref = React.createRef();
   }
   componentDidMount() {
-    console.log(this.ref);
+    console.log(this.ref.current.clientHeight);
   }
   render() {
     const { urls, description } = this.props.image;
